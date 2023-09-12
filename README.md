@@ -1,7 +1,5 @@
 # AWS Lambda in Action: 2023 Edition
 
-![Book Cover](https://github.com/cloud-club/AWSLambdaInAction-2023/assets/76844285/1008a1eb-2abe-4a8b-beef-04223a0b86a4)
-
 ## 다룰 책과 링크
 
 [AWS Lambda in Action](https://www.yes24.com/Product/Goods/57735827)

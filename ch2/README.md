@@ -2,4 +2,4 @@
 
 ## Chapter 2: Lambda function
 
-### 2.4 버전에서는..
+### 2.4 버전에서는....-

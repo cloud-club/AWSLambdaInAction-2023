@@ -116,6 +116,8 @@
                 return `${minutes}:${seconds}.${milliseconds}`;
             }
             ```
+        - 위 함수를 두 번 실행시켰을 때의 AWS CloudWatch 로그
+          ![image](https://github.com/cloud-club/AWSLambdaInAction-2023/assets/76844285/1a7f64f9-635c-47fb-b12d-9268f51c0e4c)
 
 # 여기서 다 베껴옴
 

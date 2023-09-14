@@ -19,8 +19,10 @@
     - ⚠️ index.js 함수 돌리는 과정에서 오류 발생
         - `greetingsOnDemand` 함수 제작하고 자동으로 생성되는 `index.mjs`의 확장자를 `.js`로 변경후 실행
 - AWS CLI
-- 명령 프롬포트 에서 cli 할 때, 명령어를 aws lambda invoke --function-name greetingsOnDemand --cli-binary-format raw-in-base64-out --payload "{\"name\":\"chaeyeon\"}" output.txt 와 같이 --cli-binary-format raw-in-base64-out 을 붙여줘야함 . 교재처럼 하면 Invalid base64: 오류 발생
+    - 명령 프롬포트 에서 cli 할 때, 명령어를 aws lambda invoke --function-name greetingsOnDemand --cli-binary-format raw-in-base64-out --payload " 
+      {\"name\":\"chaeyeon\"}" output.txt 와 같이 --cli-binary-format raw-in-base64-out 을 붙여줘야함 . 교재처럼 하면 Invalid base64: 오류 발생
 
+  
 ## - 교재 요약 정리
 
 ### 2.0살펴볼 내용

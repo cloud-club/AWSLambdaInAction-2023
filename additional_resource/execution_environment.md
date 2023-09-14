@@ -83,8 +83,41 @@
     - demo
         - Node.js / Python 기반 Lambda 함수 중, 일부로 완료되지 않은 promise를 수행
         - 이후 다음 invoke에서 이전의 Promise가 수행되는 것을 확인
+        - Lambda 함수 코드
+            ```jsx
+            const sleep = (ms) => {
+              return new Promise((r) => {
+                setTimeout(r, ms);
+              })
+            }
+            
+            const excuteLater = async (ms, id) => {
+              const date = new Date()
+              console.log(`실행 아이디: ${id}, ${formatDateToHHMMSSMS(date)}에 시작`);
+              await sleep(6000);
+              console.log(`실행 아이디: ${id}, ${formatDateToHHMMSSMS(date)}에 끝`);
+            }
+            
+            export const handler = async (event) => {
+              const { id } = event;
+              
+              excuteLater(6000, id);
+              
+              await sleep(5000);
+              
+              return true;
+            };
+            
+            const formatDateToHHMMSSMS = (date) => {
+                let minutes = date.getMinutes().toString().padStart(2, '0');
+                let seconds = date.getSeconds().toString().padStart(2, '0');
+                let milliseconds = date.getMilliseconds().toString().padStart(3, '0');
+                
+                return `${minutes}:${seconds}.${milliseconds}`;
+            }
+            ```
 
 # 여기서 다 베껴옴
 
-https://youtu.be/IVrWb9n2p4E?si=oSEs99AE8h9DFvIY
+https://youtu.be/IVrWb9n2p4E?si=oSEs99AE8h9DFvIY  
 https://docs.aws.amazon.com/ko_kr/lambda/latest/dg/lambda-runtime-environment.html

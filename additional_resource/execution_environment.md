@@ -11,7 +11,7 @@
         - 30개의 동시 요청은 30개의 실행 환경이 필요함
     - 단, 연속적인 함수 실행의 경우 실행 환경이 공유될 수 있음
 - Lambda 실행 정보(메모리, 실행시간 등)을 기반으로 실행 환경을 구성
-    - Lambda 함수가 업데이트 될 때 마다 새로 생성
+    - Lambda 함수가 업데이트될 때마다 새로 생성
 - Firecracker 라는 MicroVM에서 실행
     - Firecracker: AWS에서 퍼블릭 클라우드 인프라에 맞는 격리 환경을 제공하기 위한 가상화 기술
 
@@ -40,12 +40,12 @@
 - 과금 되지 않음
     - Billed duration에 포함되지 않음
 - 10초 제한
-    - 10초 이상 걸린다면 이 단계를 건너 뛰고 handler 호출
+    - 10초 이상 걸린다면 이 단계를 건너뛰고 handler 호출
     - 이후 handler 호출 단계에서 함수 실행 시간 동안 init을 수행
         - 이때는 과금이 됨
         - 10초 안에 무료 init을 꼭 하자!
-    - SnapStart가 활성화되어 있을 경우, Lambda Version이 배포된 시점에 실행
-        - SnapStart: 속도가 중요한 Lambda의 시작 속도를 빠르게 구성해주는 모드
+    - SnapStart가 활성화되어 있으면, Lambda Version이 배포된 시점에 실행
+        - SnapStart: 속도가 중요한 Lambda의 시작 속도를 빠르게 구성해 주는 모드
 
 ### Invoke phase
 

@@ -8,7 +8,9 @@
     - Deploy 버튼을 누르고 함수를 실행하면 해결 ( 새 코드 추가시 Deploy 누르고 실행 )
     - 교재에서 알려준 핸들러 필드 형식이 바뀌어서 함수가 실행이 안 된다고 예상
         
-        ![스크린샷 2023-09-14 오후 5.04.54.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/cea18d12-6bc3-41d2-a60e-7e9e4cba29e6/14d25b05-d6b6-44fd-987a-3792621615dd/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-09-14_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_5.04.54.png)
+        ![image](https://github.com/cloud-club/AWSLambdaInAction-2023/assets/85063965/df40aea9-83e8-4080-8ac7-c7454b66321a)
+
+
         
 - Python
     - 제공해준 Python 코드는 문제 없음
@@ -33,7 +35,7 @@
     > → `greetingsOnDemand` 함수 생성, `lambda_basic_excution` 역할 생성
     > 
     > 
-    > ![스크린샷 2023-09-13 오후 8.03.26.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/cea18d12-6bc3-41d2-a60e-7e9e4cba29e6/d07dc50c-1a84-4d25-9a44-c919d27631e7/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-09-13_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_8.03.26.png)
+    > ![image](https://github.com/cloud-club/AWSLambdaInAction-2023/assets/85063965/fe3cc5b3-a1a5-45a4-a650-387246a45557)
     > 
 
 - 람다 함수를 실행할 수 있는 트리거(Trigger) 선택
@@ -41,7 +43,7 @@
     > → 트리거 : 이벤트가 발생하는 각 AWS 서비스 지점으로 개별 서비스 이벤트에 따라 함수를 실행
     > 
     > 
-    > ![스크린샷 2023-09-13 오후 8.08.55.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/cea18d12-6bc3-41d2-a60e-7e9e4cba29e6/f920a6ca-5e87-4324-ad90-e5577cba8205/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-09-13_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_8.08.55.png)
+    > ![image](https://github.com/cloud-club/AWSLambdaInAction-2023/assets/85063965/07f20a6f-05d5-4ea4-aa1f-5315564e71d4)
     > 
     > - `ex)` 트리거에서 API Gateway를 선택할 경우
     >     
@@ -127,11 +129,11 @@
     > - 소스 코드에서 다른 함수 이름을 사용하려면 핸들러에서 이름을 업데이트 해야 함
     > - 지정되지 않은 함수는 코드 내부적으로만 사용 가능
     > 
-    > ![스크린샷 2023-09-13 오후 8.43.19.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/cea18d12-6bc3-41d2-a60e-7e9e4cba29e6/3ab1e3e7-126f-4c6f-8ad4-f48d0e1e8221/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-09-13_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_8.43.19.png)
+    > ![image](https://github.com/cloud-club/AWSLambdaInAction-2023/assets/85063965/db92d961-3571-44d8-9eea-5c470d0555c8)
     > 
-    > ![스크린샷 2023-09-13 오후 8.44.02.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/cea18d12-6bc3-41d2-a60e-7e9e4cba29e6/8aefbafb-56e0-44d5-815e-40a32f296278/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-09-13_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_8.44.02.png)
+    > ![image](https://github.com/cloud-club/AWSLambdaInAction-2023/assets/85063965/f841c2f0-71dc-4c1f-92b7-7dfb631ae85d)
     > 
-    > ![AWS 내부 사설 네트워크안의 리소스 접근할 시 설정](https://prod-files-secure.s3.us-west-2.amazonaws.com/cea18d12-6bc3-41d2-a60e-7e9e4cba29e6/03951119-bdfa-4ed0-9fd3-ea5dbe5740cf/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-09-13_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_8.45.06.png)
+    > ![image](https://github.com/cloud-club/AWSLambdaInAction-2023/assets/85063965/4c7621bd-968f-46cb-a8ce-43952df81ac5)
     > 
     > AWS 내부 사설 네트워크안의 리소스 접근할 시 설정
     > 
@@ -155,7 +157,7 @@
     > → 테스트 이벤트 준비 후 테스트 실행
     > 
     > 
-    > ![스크린샷 2023-09-13 오후 9.11.26.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/cea18d12-6bc3-41d2-a60e-7e9e4cba29e6/06fe3eb6-73fe-4b8f-a7df-b79dea3fd6ba/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-09-13_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_9.11.26.png)
+    > ![image](https://github.com/cloud-club/AWSLambdaInAction-2023/assets/85063965/263784dd-183d-430c-8028-4137afd8f108)
     > 
     
 
@@ -163,14 +165,15 @@
 
 → 사실상 모든 함수는 AWS Lambda Invoke API 호출을 통해 실행 가능
 
-![스크린샷 2023-09-13 오후 10.30.03.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/cea18d12-6bc3-41d2-a60e-7e9e4cba29e6/0be2a41a-1e26-4d69-8fd2-6d6ec15b11c8/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-09-13_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_10.30.03.png)
+![image](https://github.com/cloud-club/AWSLambdaInAction-2023/assets/85063965/73b357c2-0b45-4138-aeb1-6677d4519c53)
+
 
 - AWS CLI 설치
     
     > → IAM에서 **AmazonAPIGatewayAdministrator, AmazonCognitoPowerUser, AWSLambda_FullAccess** 로 사용자 생성 후 진행
     > 
     > 
-    > ![스크린샷 2023-09-13 오후 10.37.59.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/cea18d12-6bc3-41d2-a60e-7e9e4cba29e6/413dfb68-b57b-445b-9663-29235862592b/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-09-13_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_10.37.59.png)
+    > ![image](https://github.com/cloud-club/AWSLambdaInAction-2023/assets/85063965/2d7cbbf4-1d3c-4051-8f21-e1ed0e586d5b)
     > 
     
 - AWS Lambda Invoke API 함수를 직접 호출
@@ -178,7 +181,6 @@
     > → AWS CLI 설치하여 테스트
     > 
     > 
-    > ![스크린샷 2023-09-13 오후 10.28.08.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/cea18d12-6bc3-41d2-a60e-7e9e4cba29e6/8664df26-336e-420b-8a4d-e9f837525781/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-09-13_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_10.28.08.png)
+    > ![image](https://github.com/cloud-club/AWSLambdaInAction-2023/assets/85063965/01a8c1cb-259c-4c7d-a7ec-ca4fe29c1cfd)
     > 
-    > ![스크린샷 2023-09-13 오후 10.28.22.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/cea18d12-6bc3-41d2-a60e-7e9e4cba29e6/510f4f43-92cf-4aa3-bb2c-e8a817acb317/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-09-13_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_10.28.22.png)
-    >
+    > ![image](https://github.com/cloud-club/AWSLambdaInAction-2023/assets/85063965/d83db937-edbc-43f6-8cdc-f6e1e6312f0c)

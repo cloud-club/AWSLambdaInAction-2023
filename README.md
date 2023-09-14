@@ -2,6 +2,8 @@
 
 ## 다룰 책과 링크
 
+<img width="200px" alt="책 표지" src="https://github.com/cloud-club/AWSLambdaInAction-2023/assets/76844285/93dab828-388b-474a-bb41-77070abc35bf">
+
 [AWS Lambda in Action](https://www.yes24.com/Product/Goods/57735827)
 
 ## 1. 이 책을 리뉴얼하는 이유

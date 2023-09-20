@@ -95,7 +95,8 @@ Method Request 탭의 `edit` 클릭 → 2번 화면에서 URL Query String Param
 
 **8. 테스트하기**
 
-![스크린샷 2023-09-20 203159](https://github.com/cloud-club/AWSLambdaInAction-2023/assets/108706692/7d38f014-124c-4c6f-b491-32bb5b230604)
+![스크린샷 2023-09-20 203159](https://github.com/cloud-club/AWSLambdaInAction-2023/assets/108706692/25a000c3-a905-4b4e-a43f-b3e94ee75307)
+
 
 
 : Test  탭으로 가서 쿼리 스트링에 name 입력값을 입력 후 test버튼 클릭!

@@ -18,7 +18,7 @@
 2. deploy.sh
     1. S3 정책이 바뀌어서 그런지(정확하지 않음) `-acl public-read` 를 붙이면 안됨
     
-    ![image](https://github.com/cloud-club/AWSLambdaInAction-2023/assets/76844285/6636b06f-5784-4cb4-a075-824c12afb92a)
+    <img width="600px" src="https://github.com/cloud-club/AWSLambdaInAction-2023/assets/76844285/6636b06f-5784-4cb4-a075-824c12afb92a" alt="image" />
     
     이후 S3 버킷을 공개해야 하므로 다음과 같은 절차를 따라야 함
     
@@ -40,8 +40,8 @@
         ```
         
     2. 이후 원하는 객체에 url로 접근
-        
-        ![image](https://github.com/cloud-club/AWSLambdaInAction-2023/assets/76844285/46004dbb-4b67-4f8f-8cd9-4bb7e841303c)
+  
+        <img width="600px" src="https://github.com/cloud-club/AWSLambdaInAction-2023/assets/76844285/46004dbb-4b67-4f8f-8cd9-4bb7e841303c" alt="image" />
         
 3. SES에 본인 이메일 자격 증명 생성 해야함
     
